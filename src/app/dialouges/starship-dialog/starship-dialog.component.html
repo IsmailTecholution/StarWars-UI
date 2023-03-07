@@ -1,0 +1,26 @@
+<div class="dialogBox">
+    <img class="dialogImage" src="../../../assets/starships/{{avatarlist.name}}.png">
+    <div mat-dialog-content>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="personName">{{avatarlist.name}}</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <span class="infoText">MGLT : {{avatarlist.MGLT}}</span>
+            <span class="infoText">Cargo Capacity : {{avatarlist.cargo_capacity}}</span>
+            <span class="infoText">Consumables : {{avatarlist.consumables}}</span>
+            <span class="infoText">Cost In Credits : {{avatarlist.cost_in_credits}}</span>
+            <span class="infoText">Crew : {{avatarlist.crew}}</span>
+            <span class="infoText">Passengers : {{avatarlist.passengers}}</span>
+            <span class="infoText">Starship Class : {{avatarlist.starship_class}}</span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <span class="infoText">Hyperdrive Rating : {{avatarlist.hyperdrive_rating}}</span>
+            <span class="infoText">Length : {{avatarlist.length}}</span>
+            <span class="infoText">Max Atmosphering Speed : {{avatarlist.max_atmosphering_speed}}</span>
+            <span class="infoText">Manufacturer : {{avatarlist.manufacturer}}</span>
+            <span class="infoText">Model : {{avatarlist.model}}</span>
+            <span class="infoText">URL : {{avatarlist.url}}</span>
+        </div>
+    </div>
+    <div mat-dialog-actions style="justify-content: end;">
+      <button mat-button mat-dialog-close class="closeButton">Close</button>
+    </div>
+</div>

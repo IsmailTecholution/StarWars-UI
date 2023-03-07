@@ -1,0 +1,23 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" *ngIf="!isLoading">
+    <div class="pageTextColor pageTitle">PLANETS + UNIVERSE</div>
+</div>
+
+<div class="cards_wrap">
+    <div class="card_item" *ngFor="let avatarlist of plantesResultList; let i = index">
+        <div class="card_inner" (click)="callDialog(avatarlist,i+1)">
+            <img src="../../../assets/planets/{{avatarlist.name}}.png">
+            <div class="card-data">
+                <div class="role_name">{{avatarlist.name}}</div>
+                <div class="film"><span class="nameTitles">Climate : </span> {{avatarlist.climate}}</div>
+                <div class="film"><span class="nameTitles">Rotation Period : </span> {{avatarlist.rotation_period}}</div>
+                <div class="film"><span class="nameTitles">Orbital Period : </span>{{avatarlist.orbital_period}}</div>
+                <div class="film"><span class="nameTitles">Diameter : </span> {{avatarlist.diameter}}</div>
+                <div class="film"><span class="nameTitles">Terrain : </span> {{avatarlist.terrain}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 loaderMain" *ngIf="isLoading">
+    <img src="../../../assets/Images/loading.gif" class="loaderCLass">
+</div>

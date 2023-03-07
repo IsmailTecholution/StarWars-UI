@@ -1,0 +1,22 @@
+<div class="dialogBox">
+    <img class="dialogImage" src="../../../assets/planets/{{avatarlist.name}}.png">
+    <div mat-dialog-content>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="personName">{{avatarlist.name}}</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <span class="infoText">Climate : {{avatarlist.climate}}</span>
+            <span class="infoText">Diameter : {{avatarlist.diameter}}</span>
+            <span class="infoText">Gravity : {{avatarlist.gravity}}</span>
+            <span class="infoText">Orbital Period : {{avatarlist.orbital_period}}</span>
+            <span class="infoText">Population : {{avatarlist.population}}</span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <span class="infoText">Terrain : {{avatarlist.terrain}}</span>
+            <span class="infoText">Rotation Period : {{avatarlist.rotation_period}}</span>
+            <span class="infoText">Surface Water : {{avatarlist.surface_water}}</span>
+            <span class="infoText">URL : {{avatarlist.url}}</span>
+        </div>
+    </div>
+    <div mat-dialog-actions style="justify-content: end;">
+      <button mat-button mat-dialog-close class="closeButton">Close</button>
+    </div>
+</div>

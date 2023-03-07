@@ -1,0 +1,22 @@
+<div class="dialogBox">
+    <img class="dialogImage" src="../../../assets/peoples/{{avatarlist.name}}.png">
+    <div mat-dialog-content>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="personName">{{avatarlist.name}}</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <span class="infoText">Birth Year : {{avatarlist.birth_year}}</span>
+            <span class="infoText">Eye Color : {{avatarlist.eye_color}}</span>
+            <span class="infoText">Gender : {{avatarlist.gender}}</span>
+            <span class="infoText">Hair Color : {{avatarlist.hair_color}}</span>
+            <span class="infoText">H-World : {{avatarlist.homeworld}}</span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <span class="infoText">Height : {{avatarlist.height}}</span>
+            <span class="infoText">Mass : {{avatarlist.mass}}</span>
+            <span class="infoText">Skin Color : {{avatarlist.skin_color}}</span>
+            <span class="infoText">URL : {{avatarlist.url}}</span>
+        </div>
+    </div>
+    <div mat-dialog-actions style="justify-content: end;">
+      <button mat-button mat-dialog-close class="closeButton">Close</button>
+    </div>
+</div>

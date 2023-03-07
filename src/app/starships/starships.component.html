@@ -1,0 +1,23 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" *ngIf="!isLoading">
+    <div class="pageTextColor pageTitle">Starship + AERISTS</div>
+</div>
+
+<div class="cards_wrap">
+    <div class="card_item" *ngFor="let avatarlist of starShipResultList; let i = index">
+        <div class="card_inner" (click)="callDialog(avatarlist,i+1)">
+            <img src="../../../assets/starships/{{avatarlist.name}}.png">
+            <div class="card-data">
+                <div class="role_name">{{avatarlist.name}}</div>
+                <div class="film"><span class="nameTitles">Model : </span> {{avatarlist.model}}</div>
+                <div class="film"><span class="nameTitles">Crew : </span> {{avatarlist.crew}}</div>
+                <div class="film"><span class="nameTitles">Hyperdrive Rating : </span>{{avatarlist.hyperdrive_rating}}</div>
+                <div class="film"><span class="nameTitles">Cargo Capacity : </span> {{avatarlist.cargo_capacity}}</div>
+                <div class="film"><span class="nameTitles">Manufacturer : </span> {{avatarlist.manufacturer}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 loaderMain" *ngIf="isLoading">
+    <img src="../../../assets/Images/loading.gif" class="loaderCLass">
+</div>

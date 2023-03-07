@@ -1,0 +1,49 @@
+<header class="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid d-flex">
+            <div class="social-links text-left">
+                <ul class="nav navbar-nav">
+                    <li><a class="socialIcons" href="https://www.facebook.com/StarWars" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li><a class="socialIcons" href="https://www.instagram.com/starwars/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a class="socialIcons" href="https://www.youtube.com/user/starwars" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    <li><a class="socialIcons" href="https://twitter.com/starwars" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  </ul>
+            </div>
+            <div class="logo-nav text-center">
+                <a class="navbar-brand"><img src="https://lumiere-a.akamaihd.net/v1/images/sw_logo_stacked_2x-52b4f6d33087_7ef430af.png?region=0,0,586,254" class="logo"></a>
+            </div>
+            <div class="signIn-links text-left">
+                <ul class="nav navbar-nav">
+                    <li><a class="signInIcons"><i class="fa fa-search" aria-hidden="true"></i> Search</a></li>
+                    <li><a class="signInIcons" (click)="callLogIn()"><i class="fa fa-user" aria-hidden="true"></i> Sign In</a></li>
+                  </ul>
+            </div>
+            </div>
+          </nav>
+        <nav class="navbar menu navbar-border">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="container text-center menu-alignment">
+                    <ul class="nav navbar-nav">
+                        <li><a class="menuLinks" routerLink="/films"
+                            routerLinkActive="active"> Films</a></li>
+                        <li><a class="menuLinks" routerLink="/peoples"
+                            routerLinkActive="active"> Peoples</a></li>
+                        <li><a class="menuLinks" routerLink="/planets"
+                            routerLinkActive="active"> Planets</a></li>
+                        <li><a class="menuLinks" routerLink="/starships"
+                            routerLinkActive="active"> Star Ships</a></li>
+                      </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="container text-center menu-alignment pageTextColor">ALL OF YOUR STAR WARS FAVORITES NOW STREAMING ON DISNEY+</div>
+        </div>
+    
+</header>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="mainContainer">
+       <router-outlet></router-outlet>
+    </div>
+ </div>

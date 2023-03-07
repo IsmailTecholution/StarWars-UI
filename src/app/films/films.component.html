@@ -1,0 +1,23 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" *ngIf="!isLoading">
+    <div class="pageTextColor pageTitle">PLANETS + UNIVERSE</div>
+</div>
+
+<div class="cards_wrap">
+    <div class="card_item" *ngFor="let avatarlist of filmsResultList; let i = index">
+        <div class="card_inner" (click)="callDialog(avatarlist,i+1)">
+            <img src="../../../assets/films/{{avatarlist.title}}.png">
+            <div class="card-data">
+                <div class="role_name">{{avatarlist.title}}</div>
+                <div class="film"><span class="nameTitles">Episode : </span> {{avatarlist.episode_id}}</div>
+                <div class="film"><span class="nameTitles">Director : </span> {{avatarlist.director}}</div>
+                <div class="film"><span class="nameTitles">Producer : </span>{{avatarlist.producer}}</div>
+                <div class="film"><span class="nameTitles">Release Date : </span> {{avatarlist.release_date}}</div>
+                <div class="film"><span class="nameTitles">URL : </span> {{avatarlist.url}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 loaderMain" *ngIf="isLoading">
+    <img src="../../../assets/Images/loading.gif" class="loaderCLass">
+</div>

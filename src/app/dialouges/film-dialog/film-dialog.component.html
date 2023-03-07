@@ -1,0 +1,21 @@
+<div class="dialogBox">
+    <img class="dialogImage" src="../../../assets/films/{{avatarlist.title}}.png">
+    <div mat-dialog-content>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="personName">{{avatarlist.title}}</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <span class="infoText"><span class="underLine">Director</span> : {{avatarlist.director}}</span>
+            <span class="infoText"><span class="underLine">Producer</span> : {{avatarlist.producer}}</span>
+            <span class="infoText"><span class="underLine">Release Date</span> : {{avatarlist.release_date}}</span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <span class="infoText"><span class="underLine">Episode</span> : {{avatarlist.episode_id}}</span>
+            <span class="infoText"><span class="underLine">URL</span> : {{avatarlist.url}}</span>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span class="infoText"><span class="underLine">Opening Crawl</span> : {{avatarlist.opening_crawl}}</span>
+        </div>
+    </div>
+    <div mat-dialog-actions style="justify-content: end;">
+      <button mat-button mat-dialog-close class="closeButton">Close</button>
+    </div>
+</div>
